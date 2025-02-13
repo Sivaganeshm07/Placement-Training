@@ -9,8 +9,8 @@ class Pattern{
         // pattern6(n);
         // pattern7(n);
         // pattern8(n);
-        pattern9(n);
-
+        //pattern9(n);
+        pattern10(n);
     }
     static void pattern1(int n){
         for(int i = 1 ; i<=n ;i++){
@@ -148,6 +148,22 @@ class Pattern{
                 if (i > 1) {
                     System.out.print("*");
                 }
+            }
+            System.out.println();
+        }
+    }
+    static void pattern10(int n){
+        //Triangle down
+        for(int i =n ;i>=1;i--){
+            for(int j =1;j<=i;j++){
+                System.out.print(" * ");
+            }
+            System.out.println();
+        }
+        //Triangle up
+        for(int i = 1;i<=n;i++){
+            for(int j = 1;j<=i;j++){
+                System.out.print(" * ");
             }
             System.out.println();
         }
